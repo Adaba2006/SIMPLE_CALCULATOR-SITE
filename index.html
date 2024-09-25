@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="external-body">
+        <div class="internal-body">
+            <div class="display"><input type="text" id="display"></div>
+            <div class="button one"><button value="+" onclick="adop('+')">+</button></div>
+            <div class="button two"><button value="-" onclick="adop('-')">-</button></div>
+            <div class="button three"><button value="off" onclick="tOff()">OFF</button></div>
+            <div class="button four"><button value="on" onclick="tOn()">ON</button></div>
+            <div class="button five"><button value="*" onclick="adop('x')">x</button></div>
+            <div class="button six"><button value="/" onclick="adop('/')">/</button></div>
+            <div class="button seven"><button value="x" onclick="deleteb()">C</button></div>
+            <div class="button eight"><button value="clear"onclick="clearup()">CLEAR</button></div>
+            <div class="button nine"><button value="1" onclick="aper('1') ">1</button></div>
+            <div class="button ten"><button value="2" onclick="aper('2')">2</button></div>
+            <div class="button eleven"><button value="3" onclick="aper('3')">3</button></div>
+            <div class="button twelve"><button value="=" onclick="cal()">=</button></div>
+            <div class="button thirteen"><button value="4" onclick="aper('4')">4</button></div>
+            <div class="button fourteen"><button value="5" onclick="aper('5')">5</button></div>
+            <div class="button fifteen"><button value="6" onclick="aper('6')">6</button></div>
+            <div class="button sixteen"><button value="7" onclick="aper('7')">7</button></div>
+            <div class="button seventeen"><button value="8" onclick="aper('8')">8</button></div>
+            <div class="button eighteen"><button value="9" onclick="aper('9')">9</button></div>
+            <div class="button nineteen"><button value="(" onclick="adop('(')">(</button></div>
+            <div class="button twenty"><button value="0" onclick="aper('0')">0</button></div>
+            <div class="button twenty-one"><button value=")" onclick="adop(')')">)</button></div>
+        </div>
+
+        <div class="text">
+            <h1>The Basic Calculator.</h1>
+            <h2>Try it👍</h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</body>
+
+</html>
