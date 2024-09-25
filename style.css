@@ -1,0 +1,466 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    /* font-family: 'Arial', 'Helvetica', 'sans-serif'; */
+}
+
+@font-face{
+    font-family: 'Jost';
+    src: url("fonts/Poppins-Bold.woff");
+}
+
+
+
+.external-body{
+    display: flex;
+    justify-content: space-evenly;
+    background: aqua;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+}
+
+.external-body .internal-body{
+    background-color: gray;
+    height: 600px;
+    width: 450px;
+    padding: 30px;
+    border-radius: 15px;
+    display: grid;
+    place-content: center;
+    gap: 20px;
+    grid-template-columns: repeat(4, 85px);
+    grid-template-rows: repeat(8, 50px);
+    grid-template-areas: 
+    'a a a a'
+    'a a a a'
+    'b c d e'
+    'f g h i'
+    'j k l m'
+    'n o p m'
+    'q r s m'
+    't u v m';
+}
+
+.button{
+    /* background-color: white; */
+    border-radius: 5px;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 5px;
+    background: #ffffff;
+    font-family: 'Arial';
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+button:hover{
+    background: #f2f2f2;
+}
+
+.one button{
+    font-size: 1.8rem;
+    grid-area: b;
+    background: #272626;
+    color: #ffffff;
+}
+
+.one button:hover{
+    color: #d7d7d7;
+}
+
+.two button{
+    font-size: 2.5rem;
+    grid-area: c;
+    background: #272626;
+    color: #ffffff;
+}
+
+.two button:hover{
+    color: #d7d7d7;
+}
+
+.three button{
+    font-size: large;
+    grid-area: d;
+    font-family: 'Poppins';
+    background: rgb(255, 109, 109);
+}
+
+.three button:hover{
+    background: rgb(255, 125, 125);
+}
+
+.four button{
+    font-size: large;
+    grid-area: e;
+    font-family: 'Poppins';
+}
+
+.five button{
+    font-size: 2.5rem;
+    grid-area: f;
+    background: #272626;
+    color: #ffffff;
+}
+
+.five button:hover{
+    color: #d7d7d7;
+}
+
+.six button{
+    font-size: 2.1rem;
+    grid-area: g;
+    background: #272626;
+    color: #ffffff;
+}
+
+.six button:hover{
+    color: #d7d7d7;
+}
+
+.seven button{
+    font-size: 1.5rem;
+    grid-area: h;
+    font-family: 'Poppins';
+    background: rgb(221, 11, 11);
+    color: white;
+}
+
+.seven button:hover{
+    background: rgb(167, 0, 0);
+}
+
+.eight button{
+    font-size: large;
+    grid-area: i;
+    font-family: 'Poppins';
+    background: rgb(181, 21, 21);
+    color: white;
+}
+
+.eight button:hover{
+    background: rgb(167, 0, 0);
+}
+
+
+.nine button{
+    grid-area: j;
+    font-family: 'Poppins';
+}
+
+.ten button{
+    grid-area: k;
+    font-family: 'Poppins';
+}
+
+.eleven button{
+    grid-area: l;
+    font-family: 'Poppins';
+}
+
+.twelve{
+    grid-area: m;
+    font-family: 'Poppins';
+   
+}
+
+.twelve button{
+    font-family: 'Poppins';
+    background: #272626;
+    color: #ffffff;
+}
+
+.twelve button:hover{
+    color: #d7d7d7;
+}
+
+.thirteen button{
+    grid-area: n;
+    font-family: 'Poppins';
+}
+
+.fourteen button{
+    grid-area: o;
+    font-family: 'Poppins';
+}
+
+.fifteen button{
+    grid-area: p;
+    font-family: 'Poppins';
+}
+
+.sixteen button{
+    grid-area: q;
+    font-family: 'Poppins';
+}
+
+.seventeen button{
+    grid-area: r;
+    font-family: 'Poppins';
+}
+
+.eighteen button{
+    grid-area: s;
+    font-family: 'Poppins';
+}
+
+.nineteen button{
+    grid-area: t;
+    font-family: 'Poppins';
+}
+
+.twenty button{
+    grid-area: u;
+    font-family: 'Poppins';
+}
+
+.twenty-one button{
+    grid-area: v;
+    font-family: 'Poppins';
+}
+
+
+
+.display{
+    grid-area: a;
+}
+
+.display input{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 7px;
+    background: #000000;
+    color: rgba(255, 255, 255, 0.648);
+    font-size: 4.5rem;
+    font-family: 'Jarcquarda';
+    padding: 10px;
+}
+
+
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    font-family: 'Poppins';
+    width: 40%;
+}
+
+.text h1{
+    width: 40%;
+    font-size: 5rem;
+}
+
+.text h2{
+    font-size: 3rem;
+}
+
+
+
+
+
+
+
+@media (min-width:900px) and (max-width:1175px){
+    
+.external-body{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Poppins';
+    width: 80%;
+}
+
+.text h1{
+    text-align: center;
+    width: 100%;
+    font-size: 3.8rem;
+}
+
+.text h2{
+    text-align: center;
+    font-size: 2.8rem;
+}
+
+}
+
+
+@media (min-width:768px) and (max-width:900px){
+    
+    .external-body{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        font-family: 'Poppins';
+        width: 80%;
+    }
+    
+    .text h1{
+        text-align: center;
+        width: 100%;
+        font-size: 3.2rem;
+    }
+    
+    .text h2{
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    
+}
+
+@media (min-width:600px) and (max-width:768px){
+    
+        .external-body{
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .text{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            font-family: 'Poppins';
+            width: 80%;
+        }
+        
+        .text h1{
+            text-align: center;
+            width: 100%;
+            font-size: 2.5rem;
+        }
+        
+        .text h2{
+            text-align: center;
+            font-size: 2rem;
+        }
+        
+}
+
+
+@media (min-width:425px) and (max-width:600px){
+    
+            .external-body{
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .external-body .internal-body{
+                background-color: gray;
+                height: 600px;
+                width: 100%;
+                padding: 30px;
+                border-radius: 15px;
+                display: grid;
+                place-content: center;
+                gap: 20px;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(8, 1fr);
+            }
+            
+            .text{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                font-family: 'Poppins';
+                width: 80%;
+            }
+            
+            .text h1{
+                text-align: center;
+                width: 100%;
+                font-size: 2rem;
+            }
+            
+            .text h2{
+                text-align: center;
+                font-size: 1.5rem;
+            }
+            
+}
+
+
+            
+@media (min-width:300px) and (max-width:425px){
+    
+            .external-body{
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                padding: 0;
+            }
+
+            .external-body .internal-body{
+                background-color: gray;
+                height: 600px;
+                width: 100%;
+                /* padding: 30px; */
+                border-radius: 15px;
+                display: grid;
+                place-content: center;
+                gap: 20px;
+                grid-template-columns: repeat(4, minmax(60px,1fr));
+                grid-template-rows: repeat(8, 1fr);
+            }
+
+            
+            .text{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                font-family: 'Poppins';
+                width: 80%;
+            }
+            
+            .text h1{
+                text-align: center;
+                width: 100%;
+                font-size: 1.5rem;
+            }
+            
+            .text h2{
+                text-align: center;
+                font-size: 1rem;
+            }
+            
+}
